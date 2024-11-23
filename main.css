@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+}
+
+header .logo-container {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoimg {
+    width: 15vw;
+    max-width: 300px;
+    min-width: 150px;
+}
+
+#main-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    padding: 20px;
+    margin-top: -30vh;
+    margin-bottom: 30vh;
+}
+
+.main-info-txt {
+    font-size: 4vw;
+    animation: fadeInUp 1s ease-out forwards;
+    opacity: 0;
+}
+
+.extra-info {
+    font-size: 1vw;
+    margin-top: 10px;
+    animation: fadeInUp 1s ease-out 0.5s forwards;
+    opacity: 0;
+}
+
+.yellow {
+    color: #FECC09;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.services-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    background-color: #FECC09;
+    /* Yellow background */
+    color: black;
+    /* Black text color */
+    width: 300px;
+    height: 320px;
+    /* Set the height */
+    position: relative;
+    /* Relative positioning */
+    display: flex;
+    /* Flexbox for layout */
+    flex-direction: column;
+    /* Stack children vertically */
+    justify-content: flex-start;
+    /* Start stacking from the top */
+    align-items: flex-start;
+    /* Align items to the left of the container */
+    max-width: 400px;
+    /* Ensure container width does not exceed 400px */
+    margin: 0 auto;
+    /* Center container horizontally on the page */
+    border-radius: 10px;
+    /* Rounded corners */
+    padding: 20px;
+    /* Add padding inside the container */
+    text-align: left;
+    /* Align text to the left */
+}
+
+.container h1 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    background-color: #FECC09;
+    color: black;
+}
+
+.container p {
+    margin: 0;
+    padding: 0;
+    background-color: #FECC09;
+    color: black;
+}
+
+
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .main-info-txt {
+        font-size: 5vw;
+    }
+
+    .extra-info {
+        font-size: 1.5vw;
+    }
+
+    .container {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .main-info-txt {
+        font-size: 6vw;
+    }
+
+    .extra-info {
+        font-size: 2.5vw;
+    }
+
+    .logoimg {
+        width: 20vw;
+    }
+}
